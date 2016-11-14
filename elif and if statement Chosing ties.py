@@ -10,5 +10,5 @@ elif colour == 4:
         print("Today, you should wear green coloured tie")
 elif colour == 5:
         print("Today, you should wear blue coloured tie")
-elif colour == 6:
+else:
         print("Today, you should wear purple coloured tie")
