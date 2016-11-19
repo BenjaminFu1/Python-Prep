@@ -1,0 +1,18 @@
+import time
+print("This program adds up three number and shows it to you")
+time.sleep(1.5)
+FirstNumber = int(input("Please input your first number"))
+print("We receive the first number that you just input")
+time.sleep(1)
+SecondNumber = int(input("Please input your second number"))
+print("We receive the second number that you just input")
+time.sleep(1)
+ThirdNumber = int(input("Please input your third number"))
+print("We receive the third number that you just input")
+time.sleep(1)
+print("Then I add them all together...which is processing it")
+print("hmmm, ", FirstNumber, "+ ", SecondNumber, "+ ", ThirdNumber, " equals, ahhhh")
+Total = FirstNumber + SecondNumber + ThirdNumber
+time.sleep(2)
+print("Then I output it to you")
+print("It is:",Total)
