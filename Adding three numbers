@@ -1,9 +1,10 @@
 import time
+#This tells the user what this program does
 print("This program adds up three number and shows it to you")
-time.sleep(1.5)
+time.sleep(1.5) #This makes the program stop for 1.5 seconds
 FirstNumber = int(input("Please input your first number"))
 print("We receive the first number that you just input")
-time.sleep(1)
+time.sleep(1) #This makes the program stop for 1 second
 SecondNumber = int(input("Please input your second number"))
 print("We receive the second number that you just input")
 time.sleep(1)
