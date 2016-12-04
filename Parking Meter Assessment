@@ -1,0 +1,39 @@
+#This program asks for the driver to enter 5 pounds for a ticket
+import random
+import time
+print("Welcome to Ben's car park")
+time.sleep(1)
+print("You have to enter 5 pounds to get a ticket")
+time.sleep(1)
+
+TotalCashEntered = int(input("Please enter 5 pounds for a ticket"))
+
+if TotalCashEntered == 5:
+    time.sleep(1)
+    print("You have entered 5 pounds, thank you. Here's your ticket")
+    time.sleep(1)
+    print("Printing ticket")
+    time.sleep(1)
+    print("********************************************")
+    print("============================================")
+    print(" Car Parking Ticket ")
+    print(" Parking Space: R14")
+    print("============================================")
+    print("********************************************")
+elif TotalCashEntered > 5:
+    time.sleep(1)
+    print("You have entered ",TotalCashEntered," pounds, here's your ticket and ", (TotalCashEntered -5)," pounds change will be given")
+    time.sleep(1)
+    print("Printing ticket")
+    time.sleep(1)
+    print("********************************************")
+    print("============================================")
+    print(" Car Parking Ticket ")
+    print(" Parking Space: R14")
+    print("============================================")
+    print("********************************************")
+while TotalCashEntered < 5:
+    time.sleep(1)
+    MoreCash = (5 - TotalCashEntered)
+    MoreCashEntered = int(input("You have just enterd ", (TotalCashEntered)," pounds, please enter ", (MoreCash)," more pounds for a ticket"))
+    TotalCashEntered = (TotalCashEntered + MoreCashEntered)
