@@ -1,0 +1,15 @@
+import time
+print("This program changes binary to two's complement")
+Bits = int(input("How many bits are you entering? (4, 8)"))
+if Bits == 4:
+    BinaryNumber = (input("Please enter your 4 digit binary number"))
+    print("Processing")
+    time.sleep(1)
+    DenaryNumber = ((int(BinaryNumber[0]) *-8) + (int(BinaryNumber[1]) *4) + (int(BinaryNumber[2]) *2) + (int(BinaryNumber[3]) *1))
+    print("The denary of your number is:", DenaryNumber)
+if Bits == 8:
+    BinaryNumber = (input("Please enter your 8 digit binary number"))
+    print("Processing")
+    time.sleep(1)
+    DenaryNumber = ((int(BinaryNumber[0]) *-128) + (int(BinaryNumber[1]) *64) + (int(BinaryNumber[2]) *32) + (int(BinaryNumber[3]) *16)) + (int(BinaryNumber[4]) *8) + (int(BinaryNumber[5]) *4) + (int(BinaryNumber[6]) *2) + (int(BinaryNumber[7]) *1)
+    print("The denary of your number is:", DenaryNumber)
