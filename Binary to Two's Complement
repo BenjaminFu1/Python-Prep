@@ -1,0 +1,124 @@
+#This program converts binary to Two's Complement
+BinaryNumber = str(input("Please enter your 7-bit binary number:"))
+# Checking the binary number
+print("Your binary input is: ", BinaryNumber)
+
+#Adding the sign
+
+Sign = str(input("Do you want it to be positive (0) or negative (1)?"))
+if Sign == 0:
+    BinarySigned = "0" + BinaryNumber
+    print("Yor 8-bit positive signed binary number is: ", BinarySigned)
+elif Sign == 1:
+    BinarySigned = "1" + BinaryNumber
+    print("Yor 8-bit negative signed binary number is: ", BinarySigned)
+
+#Flip the bits
+    
+EighthBinaryNumber = str(BinarySigned[7])
+if EighthBinaryNumber == 0:
+    FlippedBinaryNumber = 1
+elif EighthBinaryNumber == 1:
+    FlippedBinaryNumber = 0
+
+SeventhBinaryNumber = str(BinarySigned[6])
+if SeventhBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif SeventhBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+SixthBinaryNumber = str(BinarySigned[5])
+if SixthBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif SixthBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+FifthBinaryNumber = str(BinarySigned[4])
+if FifthBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif FifthBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+FourthBinaryNumber = str(BinarySigned[3])
+if FourthBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif FourthBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+ThirdBinaryNumber = str(BinarySigned[2])
+if ThirdBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif ThirdBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+SecondBinaryNumber = str(BinarySigned[1])
+if SecondBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif SecondBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+FirstBinaryNumber = str(BinarySigned[0])
+if FirstBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber#This program converts binary to Two's Complement
+BinaryNumber = str(input("Please enter your 7-bit binary number:"))
+# Checking the binary number
+print("Your binary input is: ", BinaryNumber)
+
+#Adding the sign
+
+Sign = str(input("Do you want it to be positive (0) or negative (1)?"))
+if Sign == 0:
+    BinarySigned = "0" + BinaryNumber
+    print("Yor 8-bit positive signed binary number is: ", BinarySigned)
+elif Sign == 1:
+    BinarySigned = "1" + BinaryNumber
+    print("Yor 8-bit negative signed binary number is: ", BinarySigned)
+
+#Flip the bits
+    
+EighthBinaryNumber = str(BinarySigned[7])
+if EighthBinaryNumber == 0:
+    FlippedBinaryNumber = 1
+elif EighthBinaryNumber == 1:
+    FlippedBinaryNumber = 0
+
+SeventhBinaryNumber = str(BinarySigned[6])
+if SeventhBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif SeventhBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+SixthBinaryNumber = str(BinarySigned[5])
+if SixthBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif SixthBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+FifthBinaryNumber = str(BinarySigned[4])
+if FifthBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif FifthBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+FourthBinaryNumber = str(BinarySigned[3])
+if FourthBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif FourthBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+ThirdBinaryNumber = str(BinarySigned[2])
+if ThirdBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif ThirdBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+SecondBinaryNumber = str(BinarySigned[1])
+if SecondBinaryNumber == 0:
+    FlippedBinaryNumber = "1" + FlippedBinaryNumber
+elif SecondBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+
+
+elif FirstBinaryNumber == 1:
+    FlippedBinaryNumber = "0" + FlippedBinaryNumber
+print (FlippedBinaryNumber)
