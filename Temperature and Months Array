@@ -1,0 +1,9 @@
+#List all the months
+Months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+#List for the elements to go in
+Temperature = [0] * 12
+# i is used as a short cut so you don't have to do month[1]...[2] etc
+for i in range(0,12):
+    print("Please enter the temperature for", Months[i])
+    Temperature[i] = input()
+print (Temperature)
