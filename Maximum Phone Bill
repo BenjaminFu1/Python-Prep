@@ -1,0 +1,11 @@
+#This program asks for phonebills for every month and tells you the highest bill
+PhoneBills = [0] * 12
+MaximumBill = 0
+MonthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+for i in range(0, 12):
+    print("Please enter your phonebill for ", MonthName[i])
+    PhoneBills[i] = int(input())
+    if PhoneBills[i] > MaximumBill:
+        MaximumBill = PhoneBills[i]
+        MaximumMonth = MonthName[i]
+print("The highest bill was ", MaximumBill, " in ", MaximumMonth)
